@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>America Travel Packages - International Travel</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
+        .logo { font-size: 1.8rem; font-weight: 700; text-decoration: none; color: white; }
+        .america-hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=2000') center/cover; height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; padding-top: 100px; }
+        .page-content { padding-top: 80px; max-width: 1200px; margin: 0 auto; padding: 0 2rem 5rem; }
+        .section-title { text-align: center; font-size: 3rem; margin: 3rem 0 2rem; color: #333; }
+        .package-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+        .package-card { background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 15px 50px rgba(0,0,0,0.1); transition: all 0.3s; }
+        .package-card:hover { transform: translateY(-10px); }
+        .package-duration { font-size: 1.5rem; color: #ff6b6b; font-weight: bold; margin-bottom: 1rem; }
+        .package-name { font-size: 1.8rem; font-weight: 700; color: #333; margin-bottom: 1rem; }
+        .package-price { font-size: 2rem; color: #667eea; font-weight: bold; margin-bottom: 1.5rem; }
+        .itinerary { background: #f8f9ff; padding: 1.5rem; border-radius: 15px; margin-bottom: 1.5rem; }
+        .itinerary h4 { color: #667eea; margin-bottom: 1rem; }
+        .itinerary ul { list-style: none; }
+        .itinerary li { padding: 0.8rem 0; border-left: 4px solid #667eea; padding-left: 1rem; margin-bottom: 0.5rem; background: white; border-radius: 0 10px 10px 0; }
+        .back-btn { background: linear-gradient(45deg, #667eea, #764ba2); color: white; padding: 15px 30px; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; margin: 3rem auto 0; display: block; }
+        @media (max-width: 768px) { .package-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🌍 International Travel</a>
+            <a href="index.html#destinations" style="color: white; text-decoration: none; font-weight: 500;">← सभी Destinations</a>
+        </nav>
+    </header>
+
+    <section class="america-hero">
+        <div>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">🇺🇸 America Packages</h1>
+            <p style="font-size: 1.4rem;">USA • Canada • Brazil | East Coast to West Coast Adventure</p>
+        </div>
+    </section>
+
+    <div class="page-content">
+        <h2 class="section-title">✨ Premium Packages</h2>
+
+        <div class="package-grid">
+            <!-- USA East Coast -->
+            <div class="package-card">
+                <div class="package-duration">10 Days / 9 Nights</div>
+                <div class="package-name">USA East Coast</div>
+                <div class="package-price">₹1,85,000/person</div>
+                <div class="itinerary">
+                    <h4>📅 Complete Itinerary:</h4>
+                    <ul>
+                        <li>🗽 New York (Statue of Liberty + Times Square)</li>
+                        <li>🏛️ Washington DC (White House + Capitol Hill)</li>
+                        <li>🌊 Niagara Falls (Maid of the Mist boat)</li>
+                        <li>🍎 Boston Freedom Trail</li>
+                        <li>✈️ All internal flights + 4-star hotels</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- California Dream -->
+            <div class="package-card">
+                <div class="package-duration">7 Days / 6 Nights</div>
+                <div class="package-name">California Dream</div>
+                <div class="package-price">₹1,45,000/person</div>
+                <div class="itinerary">
+                    <h4>📅 Day-wise:</h4>
+                    <ul>
+                        <li>🎥 Los Angeles (Hollywood + Universal Studios)</li>
+                        <li>🌉 San Francisco (Golden Gate + Alcatraz)</li>
+                        <li>🏖️ Santa Barbara beach drive</li>
+                        <li>🍷 Napa Valley wine tour</li>
+                        <li>🚙 Luxury SUV self-drive option</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Canada Rockies -->
+            <div class="package-card">
+                <div class="package-duration">9 Days / 8 Nights</div>
+                <div class="package-name">Canada Rockies</div>
+                <div class="package-price">₹1,65,000/person</div>
+                <div class="itinerary">
+                    <h4>📅 Nature Adventure:</h4>
+                    <ul>
+                        <li>🏔️ Banff National Park + Lake Louise</li>
+                        <li>🧊 Glacier Icefields Parkway</li>
+                        <li>🐻 Wildlife safari (grizzly bears)</li>
+                        <li>⛷️ Whistler ski resort</li>
+                        <li>🌌 Northern Lights viewing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <button class="back-btn" onclick="window.location.href='index.html#destinations'">सभी Destinations देखें</button>
+    </div>
+</body>
+</html>
+

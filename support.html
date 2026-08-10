@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24/7 Customer Support - International Travel</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
+        .logo { font-size: 1.8rem; font-weight: 700; text-decoration: none; color: white; }
+        .support-page { padding-top: 100px; padding-bottom: 100px; max-width: 1000px; margin: 0 auto; }
+        .section-title { text-align: center; font-size: 3rem; margin: 3rem 0 2rem; color: #333; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .contact-card { background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 15px 50px rgba(0,0,0,0.1); text-align: center; transition: all 0.3s; }
+        .contact-card:hover { transform: translateY(-10px); }
+        .contact-icon { font-size: 4rem; color: #ff6b6b; margin-bottom: 1.5rem; }
+        .contact-method { font-size: 1.6rem; font-weight: 700; color: #333; margin-bottom: 1rem; }
+        .contact-details { font-size: 1.3rem; color: #666; line-height: 1.8; }
+        .whatsapp-btn, .call-btn, .email-btn { background: linear-gradient(45deg, #25D366, #128C7E); color: white; padding: 15px 30px; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; margin: 1rem; font-size: 1.1rem; text-decoration: none; display: inline-block; transition: all 0.3s; }
+        .call-btn { background: linear-gradient(45deg, #ff6b6b, #ff8e8e); }
+        .email-btn { background: linear-gradient(45deg, #667eea, #764ba2); }
+        .whatsapp-btn:hover { transform: scale(1.05); }
+        .call-btn:hover { transform: scale(1.05); }
+        .email-btn:hover { transform: scale(1.05); }
+        .support-table { width: 100%; margin-top: 3rem; background: #f8f9fa; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .support-table table { width: 100%; border-collapse: collapse; }
+        .support-table th, .support-table td { padding: 1.5rem; text-align: left; border-bottom: 1px solid #eee; }
+        .support-table th { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; font-weight: 600; }
+        .back-btn { background: linear-gradient(45deg, #667eea, #764ba2); color: white; padding: 15px 30px; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; margin-top: 3rem; display: block; margin: 3rem auto 0; }
+        @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🌍 International Travel</a>
+            <a href="index.html" style="color: white; text-decoration: none; font-weight: 500;">← होम</a>
+        </nav>
+    </header>
+
+    <section class="support-page">
+        <h1 class="section-title">📞 24/7 Customer Support</h1>
+        <p style="text-align: center; font-size: 1.3rem; color: #666; margin-bottom: 3rem;">Emergency Help | Hindi/English | WhatsApp Live | Instant Response</p>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                <div class="contact-method">WhatsApp Chat</div>
+                <div class="contact-details">
+                    <strong>+91 98765 43210</strong><br>
+                    24 घंटे live response<br>
+                    Flight/Visa/Emergency
+                </div>
+                <a href="https://wa.me/919876543210" class="whatsapp-btn" target="_blank">WhatsApp चैट शुरू करें</a>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                <div class="contact-method">Emergency Call</div>
+                <div class="contact-details">
+                    <strong>+91 98765 43211</strong><br>
+                    24x7 Toll Free<br>
+                    30 सेकंड में connect
+                </div>
+                <a href="tel:+919876543211" class="call-btn">अभी कॉल करें</a>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div class="contact-method">Email Support</div>
+                <div class="contact-details">
+                    <strong>support@internationaltravel.com</strong><br>
+                    Reply within 2 hours<br>
+                    Booking + Documentation
+                </div>
+                <a href="mailto:support@internationaltravel.com" class="email-btn">ईमेल भेजें</a>
+            </div>
+        </div>
+
+        <div class="support-table">
+            <table>
+                <tr>
+                    <th>समस्या</th>
+                    <th>क्या करें</th>
+                    <th>समय</th>
+                </tr>
+                <tr>
+                    <td>Flight delay/cancel</td>
+                    <td>WhatsApp +91 98765 43210</td>
+                    <td>Instant</td>
+                </tr>
+                <tr>
+                    <td>Hotel issue</td>
+                    <td>Emergency Call</td>
+                    <td>30 sec</td>
+                </tr>
+                <tr>
+                    <td>Visa problem</td>
+                    <td>Email support</td>
+                    <td>2 hours</td>
+                </tr>
+                <tr>
+                    <td>Refund request</td>
+                    <td>Call + WhatsApp</td>
+                    <td>24 hours</td>
+                </tr>
+                <tr>
+                    <td>Lost luggage</td>
+                    <td>Emergency Call</td>
+                    <td>Immediate</td>
+                </tr>
+            </table>
+        </div>
+
+        <button class="back-btn" onclick="window.location.href='index.html'">← सभी सेवाएँ देखें</button>
+    </section>
+</body>
+</html>
+

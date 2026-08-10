@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asia Travel Packages - International Travel</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
+        .logo { font-size: 1.8rem; font-weight: 700; text-decoration: none; color: white; }
+        .asia-hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1558618047-3c8c76ba5bf9?w=2000') center/cover; height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; padding-top: 100px; }
+        .page-content { padding-top: 80px; max-width: 1200px; margin: 0 auto; padding: 0 2rem 5rem; }
+        .section-title { text-align: center; font-size: 3rem; margin: 3rem 0 2rem; color: #333; }
+        .package-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+        .package-card { background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 15px 50px rgba(0,0,0,0.1); transition: all 0.3s; }
+        .package-card:hover { transform: translateY(-10px); }
+        .package-duration { font-size: 1.5rem; color: #ff6b6b; font-weight: bold; margin-bottom: 1rem; }
+        .package-name { font-size: 1.8rem; font-weight: 700; color: #333; margin-bottom: 1rem; }
+        .package-price { font-size: 2rem; color: #667eea; font-weight: bold; margin-bottom: 1.5rem; }
+        .itinerary { background: #f8f9ff; padding: 1.5rem; border-radius: 15px; margin-bottom: 1.5rem; }
+        .itinerary h4 { color: #667eea; margin-bottom: 1rem; }
+        .itinerary ul { list-style: none; }
+        .itinerary li { padding: 0.8rem 0; border-left: 4px solid #667eea; padding-left: 1rem; margin-bottom: 0.5rem; background: white; border-radius: 0 10px 10px 0; }
+        .back-btn { background: linear-gradient(45deg, #667eea, #764ba2); color: white; padding: 15px 30px; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; margin: 3rem auto 0; display: block; }
+        @media (max-width: 768px) { .package-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🌍 International Travel</a>
+            <a href="index.html#destinations" style="color: white; text-decoration: none; font-weight: 500;">← सभी Destinations</a>
+        </nav>
+    </header>
+
+    <section class="asia-hero">
+        <div>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">🇹🇭 Asia Packages</h1>
+            <p style="font-size: 1.4rem;">Thailand • Japan • Singapore • Dubai | Exotic East Experience</p>
+        </div>
+    </section>
+
+    <div class="page-content">
+        <h2 class="section-title">✨ Popular Packages</h2>
+
+        <div class="package-grid">
+            <!-- Thailand 6D -->
+            <div class="package-card">
+                <div class="package-duration">6 Days / 5 Nights</div>
+                <div class="package-name">Thailand Paradise</div>
+                <div class="package-price">₹75,000/person</div>
+                <div class="itinerary">
+                    <h4>📅 Day-wise Plan:</h4>
+                    <ul>
+                        <li>🏝️ Phuket (Patong Beach + Phi Phi Island)</li>
+                        <li>🛕 Bangkok (Grand Palace + Wat Arun)</li>
+                        <li>🛍️ Premium Outlet + Floating Market</li>
+                        <li>🌅 Sunset dinner cruise</li>
+                        <li>✈️ All flights + 4-star resort</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Japan 8D -->
+            <div class="package-card">
+                <div class="package-duration">8 Days / 7 Nights</div>
+                <div class="package-name">Japan Discovery</div>
+                <div class="package-price">₹1,25,000/person</div>
+                <div class="itinerary">
+                    <h4>📅 Day-wise Plan:</h4>
+                    <ul>
+                        <li>🗼 Tokyo (Shibuya + Tokyo Tower)</li>
+                        <li>🌸 Kyoto (temples + Geisha culture)</li>
+                        <li>🏯 Osaka Castle + Universal Studios</li>
+                        <li>🍣 Sushi making class</li>
+                        <li>🚅 Shinkansen bullet train</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Dubai Luxury 4D -->
+            <div class="package-card">
+                <div class="package-duration">4 Days / 3 Nights</div>
+                <div class="package-name">Dubai Luxury</div>
+                <div class="package-price">₹95,000/person</div>
+                <div class="itinerary">
+                    <h4>📅 Day-wise Plan:</h4>
+                    <ul>
+                        <li>🌆 Burj Khalifa 124th floor</li>
+                        <li>🏜️ Desert Safari + BBQ dinner</li>
+                        <li>🛍️ Dubai Mall + Gold Souk</li>
+                        <li>🚤 Dhow cruise Marina</li>
+                        <li>🏨 5-star Atlantis hotel</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <button class="back-btn" onclick="window.location.href='index.html#destinations'">सभी Destinations देखें</button>
+    </div>
+</body>
+</html>
+

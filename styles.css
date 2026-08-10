@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: #0a0a0a;
+    color: #f0f0f0;
+}
+
+/* Header - Perfect Black Gold */
+header {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #f0f0f0;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(255,215,0,0.3);
+    border-bottom: 2px solid #ffd700;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffd700 !important;
+    text-shadow: 0 0 15px rgba(255,215,0,0.5);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    color: #d4d4d4 !important;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffd700;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd700 !important;
+    text-shadow: 0 0 10px rgba(255,215,0,0.8);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-link-back {
+    color: #d4d4d4 !important;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.nav-link-back:hover {
+    color: #ffd700 !important;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ffd700;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(rgba(10,10,10,0.8), rgba(0,0,0,0.9)), 
+                url('https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=85') center/cover fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(255,215,0,0.12) 0%, transparent 70%);
+    animation: goldGlow 4s ease-in-out infinite alternate;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3.8rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #ffd700, #ffed4e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: fadeInUp 1s ease;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: #f0f0f0;
+    animation: fadeInUp 1s ease 0.3s both;
+}
+
+.cta-button {
+    background: linear-gradient(45deg, #ffd700, #ffed4e);
+    color: #1a1a1a;
+    padding: 18px 45px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: all 0.4s;
+    animation: fadeInUp 1s ease 0.6s both;
+    box-shadow: 0 10px 30px rgba(255,215,0,0.4);
+    border: 2px solid #ffd700;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(255,215,0,0.6);
+}
+
+/* Services */
+.services {
+    padding: 120px 2rem 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: radial-gradient(ellipse at center, rgba(255,215,0,0.05) 0%, transparent 70%);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    background: linear-gradient(45deg, #ffd700, #ffed4e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 2.5rem;
+}
+
+.service-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,215,0,0.3);
+    padding: 3rem 2.5rem;
+    border-radius: 25px;
+    text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #ffd700, transparent);
+}
+
+.service-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 30px 80px rgba(255,215,0,0.25);
+    border-color: #ffd700;
+}
+
+.service-card i {
+    font-size: 4rem;
+    background: linear-gradient(45deg, #ffd700, #ffed4e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 0 15px rgba(255,215,0,0.5));
+}
+
+.service-card h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #f0f0f0;
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    color: #d4d4d4;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Destinations - HD Images Added */
+.destinations {
+    padding: 120px 2rem;
+    background: linear-gradient(135deg, #1a1a1a 0%, #111 100%);
+}
+
+.dest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 4rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Europe - Paris Eiffel Tower */
+.europe-card {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), 
+                url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=85') center/cover;
+}
+
+/* Asia - Tokyo Tower */
+.asia-card {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), 
+                url('https://images.unsplash.com/photo-1551524164-fd13da5b7813?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=85') center/cover;
+}
+
+/* America - NYC Skyline */
+.america-card {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), 
+                url('https://images.unsplash.com/photo-1489599501217-3d91a2f18c6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=85') center/cover;
+}
+
+/* Africa - Safari */
+.africa-card {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), 
+                url('https://images.unsplash.com/photo-1533050482737-0a85d5b76a8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=85') center/cover;
+}
+
+.dest-card {
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 320px;
+    border: 2px solid rgba(255,215,0,0.5);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.dest-card:hover {
+    transform: scale(1.05);
+    border-color: #ffd700;
+    box-shadow: 0 25px 70px rgba(255,215,0,0.4);
+}
+
+.dest-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.95));
+    padding: 2.5rem 2rem;
+    color: #f0f0f0;
+}
+
+.dest-info h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact */
+.contact {
+    padding: 120px 2rem;
+    max-width: 1000px;
+    margin: 0 auto 4rem;
+    background: rgba(255,255,255,0.05);
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,215,0,0.3);
+    box-shadow: 0 30px 80px rgba(0,0,0,0.8);
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 20px 25px;
+    background: rgba(255,255,255,0.08);
+    border: 2px solid rgba(255,215,0,0.4);
+    border-radius: 15px;
+    color: #f0f0f0;
+    font-family: inherit;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder {
+    color: #999;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #ffd700;
+    box-shadow: 0 0 25px rgba(255,215,0,0.4);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
+    color: #d4d4d4;
+    text-align: center;
+    padding: 4rem 2rem 2rem;
+    border-top: 4px solid #ffd700;
+}
+
+/* Service Pages */
+.hotel-page, .plan-page, .support-page {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #0a0a0a;
+    min-height: 100vh;
+    color: #f0f0f0;
+}
+
+.page-subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #d4d4d4;
+    margin-bottom: 3rem;
+}
+
+.hotel-grid, .plan-grid, .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+}
+
+.hotel-card, .plan-card, .contact-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,215,0,0.3);
+    border-radius: 25px;
+    padding: 2.5rem;
+    transition: all 0.4s;
+}
+
+.hotel-card:hover, .plan-card:hover, .contact-card:hover {
+    transform: translateY(-10px);
+    border-color: #ffd700;
+    box-shadow: 0 20px 60px rgba(255,215,0,0.3);
+}
+
+.hotel-image {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.hotel-name, .plan-name, .contact-method {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #f0f0f0;
+    margin-bottom: 0.8rem;
+}
+
+.hotel-price {
+    font-size: 2rem;
+    color: #ffd700;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.back-btn {
+    background: linear-gradient(45deg, #ffd700, #ffed4e);
+    color: #1a1a1a;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 4rem auto 0;
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    box-shadow: 0 10px 30px rgba(255,215,0,0.4);
+}
+
+.back-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(255,215,0,0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(26,26,26,0.98);
+        flex-direction: column;
+        padding: 1.5rem;
+        border-radius: 0 0 20px 20px;
+    }
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+    .hero {
+        background-attachment: scroll;
+    }
+    .services-grid, .hotel-grid, .plan-grid, .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes goldGlow {
+    0% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+

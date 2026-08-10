@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Flights - International Travel</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .flight-page { padding: 100px 2rem; max-width: 1200px; margin: 0 auto; }
+        .flight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .flight-item { background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 15px 50px rgba(0,0,0,0.1); transition: all 0.3s; cursor: pointer; }
+        .flight-item:hover { transform: translateY(-10px); box-shadow: 0 25px 70px rgba(0,0,0,0.15); }
+        .flight-airline { font-size: 1.8rem; font-weight: 700; color: #667eea; margin-bottom: 1rem; }
+        .flight-route { font-size: 1.3rem; color: #666; margin-bottom: 1rem; }
+        .flight-price { font-size: 2rem; font-weight: bold; color: #ff6b6b; margin-bottom: 1rem; }
+        .flight-details { color: #888; line-height: 1.6; }
+        .back-btn { background: linear-gradient(45deg, #667eea, #764ba2); color: white; padding: 15px 30px; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header style="position: relative;">
+        <nav style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; padding: 1rem 2rem;">
+            <a href="index.html" class="logo" style="font-size: 1.8rem; font-weight: 700; color: white; text-decoration: none;">🌍 International Travel</a>
+            <a href="index.html" style="color: white; text-decoration: none; font-weight: 500;">← होम</a>
+        </nav>
+    </header>
+
+    <section class="flight-page">
+        <h1 style="text-align: center; font-size: 3rem; margin-bottom: 1rem; color: #333;">✈️ International Flights</h1>
+        <p style="text-align: center; font-size: 1.3rem; color: #666; margin-bottom: 3rem;">200+ Airlines | Real-time Prices | Instant Booking</p>
+
+        <div class="flight-grid">
+            <!-- Emirates -->
+            <div class="flight-item">
+                <div class="flight-airline">🇦🇪 Emirates</div>
+                <div class="flight-route"><i class="fas fa-plane"></i> Delhi → Dubai (DXB) → Worldwide</div>
+                <div class="flight-price">₹28,500</div>
+                <div class="flight-details">
+                    <strong>Economy</strong> | 6h 30m | Daily flights<br>
+                    • Direct + 1-stop options<br>
+                    • 23kg baggage included<br>
+                    • Meals + entertainment<br>
+                    <strong>Next flight:</strong> Tomorrow 2:30 AM
+                </div>
+            </div>
+
+            <!-- Qatar -->
+            <div class="flight-item">
+                <div class="flight-airline">🇶🇦 Qatar Airways</div>
+                <div class="flight-route"><i class="fas fa-plane"></i> Mumbai → Doha (DOH) → Europe/USA</div>
+                <div class="flight-price">₹32,000</div>
+                <div class="flight-details">
+                    <strong>Economy</strong> | 8h 15m | 4 flights daily<br>
+                    • World's Best Airline<br>
+                    • Business upgrade ₹15,000<br>
+                    • Free Doha stopover<br>
+                    <strong>Rating:</strong> ⭐⭐⭐⭐⭐
+                </div>
+            </div>
+
+            <!-- Etihad -->
+            <div class="flight-item">
+                <div class="flight-airline">🇦🇪 Etihad Airways</div>
+                <div class="flight-route"><i class="fas fa-plane"></i> Delhi → Abu Dhabi (AUH) → Australia</div>
+                <div class="flight-price">₹35,000</div>
+                <div class="flight-details">
+                    <strong>Economy</strong> | 7h 45m | Daily<br>
+                    • Lounge access available<br>
+                    • 30kg baggage<br>
+                    • Direct flights Europe<br>
+                    <strong>Business:</strong> ₹85,000
+                </div>
+            </div>
+
+            <!-- Air India -->
+            <div class="flight-item">
+                <div class="flight-airline">🇮🇳 Air India</div>
+                <div class="flight-route"><i class="fas fa-plane"></i> Direct International (London, New York)</div>
+                <div class="flight-price">₹45,000</div>
+                <div class="flight-details">
+                    <strong>Economy</strong> | Non-stop | Daily<br>
+                    • Direct USA/Europe<br>
+                    • Indian meals onboard<br>
+                    • Free date change<br>
+                    <strong>Group discount:</strong> 10%+
+                </div>
+            </div>
+
+            <!-- Turkish Airlines -->
+            <div class="flight-item">
+                <div class="flight-airline">🇹🇷 Turkish Airlines</div>
+                <div class="flight-route"><i class="fas fa-plane"></i> Delhi → Istanbul → Worldwide</div>
+                <div class="flight-price">₹38,000</div>
+                <div class="flight-details">
+                    <strong>Economy</strong> | 9h 20m | 3 daily<br>
+                    • Free Istanbul tour<br>
+                    • Best business class<br>
+                    • Europe €200 extra<br>
+                    <strong>Rating:</strong> ⭐⭐⭐⭐⭐
+                </div>
+            </div>
+
+            <!-- Singapore Airlines -->
+            <div class="flight-item">
+                <div class="flight-airline">🇸🇬 Singapore Airlines</div>
+                <div class="flight-route"><i class="fas fa-plane"></i> Mumbai → Singapore → Australia</div>
+                <div class="flight-price">₹42,000</div>
+                <div class="flight-details">
+                    <strong>Economy</strong> | 10h 30m | Daily<br>
+                    • Best service world<br>
+                    • Singapore stopover<br>
+                    • Premium economy avail<br>
+                    <strong>Luxury:</strong> Top rated
+                </div>
+            </div>
+        </div>
+
+        <button class="back-btn" onclick="window.location.href='index.html'">← सभी सेवाएँ देखें</button>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        // Smooth scroll back to top
+        document.querySelectorAll('a[href]').forEach(link => {
+            link.addEventListener('click', e => {
+                if (link.getAttribute('href') === '#') {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Flight item click - Book now simulation
+        document.querySelectorAll('.flight-item').forEach(item => {
+            item.style.cursor = 'pointer';
+            item.addEventListener('click', () => {
+                alert('✅ Booking started! Form भरें contact section में।\nReal-time price check + instant confirmation।');
+            });
+        });
+    </script>
+</body>
+</html>
+

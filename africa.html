@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Africa Travel Packages - International Travel</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
+        .logo { font-size: 1.8rem; font-weight: 700; text-decoration: none; color: white; }
+        .africa-hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1578632233765-539b7f7579fa?w=2000') center/cover; height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; padding-top: 100px; }
+        .page-content { padding-top: 80px; max-width: 1200px; margin: 0 auto; padding: 0 2rem 5rem; }
+        .section-title { text-align: center; font-size: 3rem; margin: 3rem 0 2rem; color: #333; }
+        .package-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+        .package-card { background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 15px 50px rgba(0,0,0,0.1); transition: all 0.3s; }
+        .package-card:hover { transform: translateY(-10px); }
+        .package-duration { font-size: 1.5rem; color: #ff6b6b; font-weight: bold; margin-bottom: 1rem; }
+        .package-name { font-size: 1.8rem; font-weight: 700; color: #333; margin-bottom: 1rem; }
+        .package-price { font-size: 2rem; color: #667eea; font-weight: bold; margin-bottom: 1.5rem; }
+        .itinerary { background: #f8f9ff; padding: 1.5rem; border-radius: 15px; margin-bottom: 1.5rem; }
+        .itinerary h4 { color: #667eea; margin-bottom: 1rem; }
+        .itinerary ul { list-style: none; }
+        .itinerary li { padding: 0.8rem 0; border-left: 4px solid #667eea; padding-left: 1rem; margin-bottom: 0.5rem; background: white; border-radius: 0 10px 10px 0; }
+        .back-btn { background: linear-gradient(45deg, #667eea, #764ba2); color: white; padding: 15px 30px; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; margin: 3rem auto 0; display: block; }
+        @media (max-width: 768px) { .package-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🌍 International Travel</a>
+            <a href="index.html#destinations" style="color: white; text-decoration: none; font-weight: 500;">← सभी Destinations</a>
+        </nav>
+    </header>
+
+    <section class="africa-hero">
+        <div>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">🇿🇦 Africa Packages</h1>
+            <p style="font-size: 1.4rem;">South Africa • Egypt • Kenya | Safari + Pyramids + Wildlife</p>
+        </div>
+    </section>
+
+    <div class="page-content">
+        <h2 class="section-title">🌍 Wildlife Adventure Packages</h2>
+
+        <div class="package-grid">
+            <!-- Kenya Safari -->
+            <div class="package-card">
+                <div class="package-duration">8 Days / 7 Nights</div>
+                <div class="package-name">Kenya Safari</div>
+                <div class="package-price">₹1,55,000/person</div>
+                <div class="itinerary">
+                    <h4>📅 Safari Adventure:</h4>
+                    <ul>
+                        <li>🦁 Masai Mara (Big 5 animals)</li>
+                        <li>🦒 Giraffe Centre + Elephant orphanage</li>
+                        <li>🌅 Hot air balloon safari</li>
+                        <li>🏕️ Luxury tented camp</li>
+                        <li>✈️ Nairobi + Mara flights</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Egypt Pyramids -->
+            <div class="package-card">
+                <div class="package-duration">6 Days / 5 Nights</div>
+                <div class="package-name">Egypt Pyramids</div>
+                <div class="package-price">₹1,15,000/person</div>
+                <div class="itinerary">
+                    <h4>📅 Ancient Wonders:</h4>
+                    <ul>
+                        <li>🏺 Giza Pyramids + Sphinx</li>
+                        <li>🚤 Nile River cruise</li>
+                        <li>🏛️ Luxor Karnak Temple</li>
+                        <li>👑 Valley of Kings (Tutankhamun tomb)</li>
+                        <li>🌅 Abu Simbel sunrise</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- South Africa -->
+            <div class="package-card">
+                <div class="package-duration">10 Days / 9 Nights</div>
+                <div class="package-name">South Africa Complete</div>
+                <div class="package-price">₹1,75,000/person</div>
+                <div class="itinerary">
+                    <h4>📅 Rainbow Nation:</h4>
+                    <ul>
+                        <li>🦏 Cape Town + Table Mountain</li>
+                        <li>🏝️ Robben Island (Mandela prison)</li>
+                        <li>🐘 Kruger National Park safari</li>
+                        <li>🍷 Stellenbosch wine route</li>
+                        <li>🌊 Garden Route scenic drive</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <button class="back-btn" onclick="window.location.href='index.html#destinations'">सभी Destinations देखें</button>
+    </div>
+</body>
+</html>
+
